@@ -4,6 +4,7 @@ import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as nodepath from 'path';
 import simplePageTemplate from './template/simplePage';
+import yzPageTemplate from './template/generateYZPage';
 import searchFormAndTable from './template/searchFormAndTable';
 import ModalPage from './template/modal';
 
@@ -51,6 +52,10 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from umi-page-helper!');
 	});
 
+	let generateYZPage = vscode.commands.registerCommand('umi-page-helper.generateYZPage', (e) => {
+		writeFile(e.fsPath, yzPageTemplate);
+	});
+
 	let generateSimplePage = vscode.commands.registerCommand('umi-page-helper.generateSimplePage', (e) => {
 		writeFile(e.fsPath, simplePageTemplate);
 	});
@@ -64,6 +69,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	context.subscriptions.push(disposable);
+	context.subscriptions.push(generateYZPage);
 	context.subscriptions.push(generateSimplePage);
 	context.subscriptions.push(generateSearchFormAndTable);
 	context.subscriptions.push(generateModal);
