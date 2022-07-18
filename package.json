@@ -4,7 +4,7 @@
 	"description": "一款快速生成react+antd各种场景的模板插件",
 	"version": "0.0.2",
 	"repository": "https://github.com/00feng00/umi-page-helper",
-	"publisher": "afengFE007",
+	"publisher": "afengFE",
 	"license": "MIT",
 	"icon": "logo.png",
 	"engines": {
@@ -24,11 +24,6 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "umi-page-helper.generateYZPage",
-				"title": "生成一个yz搜索&表格页面",
-				"category": "快速生成React&Antd页面"
-			},
-			{
 				"command": "umi-page-helper.generateSimplePage",
 				"title": "生成一个简单页面",
 				"category": "快速生成React&Antd页面"
@@ -41,6 +36,11 @@
 			{
 				"command": "umi-page-helper.generateModal",
 				"title": "生成一个弹窗页面",
+				"category": "快速生成React&Antd页面"
+			},
+			{
+				"command": "umi-page-helper.generateYZPage",
+				"title": "生成一个yz搜索&表格页面",
 				"category": "快速生成React&Antd页面"
 			}
 		],
@@ -62,8 +62,8 @@
 					"group": "1_generate@2"
 				},
 				{
-					"command": "umi-page-helper.generateModal",
-					"group": "1_generate@3"
+					"command": "umi-page-helper.generateYZPage",
+					"group": "1_generate@4"
 				}
 			]
     },
