@@ -38,7 +38,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       fixed: 'left',
     },
     {
-      title: '业务类型',
+      title: '类型',
       dataIndex: 'id',
       ellipsis: true,
       valueType: 'select',
@@ -65,7 +65,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       },
     },
     {
-      title: '竞价商品',
+      title: '商品',
       dataIndex: 'id',
       hideInSearch: true,
       ellipsis: true,
@@ -80,34 +80,33 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       },
     },
     {
-      title: '起拍价格',
+      title: '价格',
       dataIndex: 'mainType',
       hideInSearch: true,
       renderText(text) {
-        // 价格+单位
-        return '123元/kg';
+        return '123元';
       },
     },
     {
-      title: '竞拍开始时间',
+      title: '开始时间',
       dataIndex: 'createUserName',
       valueType: 'dateTime',
       hideInSearch: true,
     },
     {
-      title: '竞拍结束时间',
+      title: '结束时间',
       dataIndex: 'createUserName',
       valueType: 'dateTime',
       hideInSearch: true,
     },
     {
-      title: '交付日期',
+      title: '日期',
       dataIndex: 'createUserName',
       valueType: 'date',
       hideInSearch: true,
     },
     {
-      title: '交付地址',
+      title: '地址',
       order: 3,
       ellipsis: true,
       dataIndex: 'createUserName',
@@ -116,11 +115,11 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       },
       fieldProps: {
         maxLength: 50,
-        placeholder: '请输入交付地址',
+        placeholder: '请输入地址',
       },
     },
     {
-      title: '发布渠道',
+      title: '渠道',
       dataIndex: 'phoneNumber',
       valueType: 'select',
       order: 4,
@@ -139,7 +138,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       hideInSearch: true,
     },
     {
-      title: '竞价编码',
+      title: '编码',
       dataIndex: 'createUserName',
       order: 7,
       searchFormColumn: {
@@ -147,16 +146,16 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       },
       fieldProps: {
         maxLength: 50,
-        placeholder: '请输入竞价编码',
+        placeholder: '请输入编码',
       },
     },
     {
-      title: '发布人',
+      title: '名称',
       dataIndex: 'createUserName',
       hideInSearch: true,
     },
     {
-      title: '发布时间',
+      title: '其他时间',
       dataIndex: 'createTime',
       valueType: 'dateTime',
       hideInSearch: true,
@@ -167,19 +166,19 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       hideInSearch: true,
     },
     {
-      title: '创建时间',
+      title: '开始时间',
       dataIndex: 'createTime',
       valueType: 'dateTime',
       hideInSearch: true,
     },
     {
-      title: '竞拍时间',
+      title: '其他时间',
       dataIndex: 'biddingTime',
       valueType: 'dateRange',
       hideInTable: true,
       order: 2,
       fieldProps: {
-        placeholder: ['竞拍起始时间', '竞拍截至时间'],
+        placeholder: ['起始时间', '截至时间'],
       },
       search: {
         transform: (value) => {
