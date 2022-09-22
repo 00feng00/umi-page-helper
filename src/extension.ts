@@ -5,6 +5,7 @@ import * as fs from 'fs';
 import * as nodepath from 'path';
 import simplePageTemplate from './template/simplePage';
 import yzPageTemplate from './template/generateYZPage';
+import renderService from './template/renderService';
 import tableRenderPageTemplate from './template/tableRenderPage';
 import searchFormAndTable from './template/searchFormAndTable';
 import ModalPage from './template/modal';
@@ -55,6 +56,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let tableRenderPage = vscode.commands.registerCommand('umi-page-helper.tableRenderPage', (e) => {
 		writeFile(e.fsPath, tableRenderPageTemplate);
+		writeFile(e.fsPath, renderService, 'service.ts');
 	});
 
 	let generateYZPage = vscode.commands.registerCommand('umi-page-helper.generateYZPage', (e) => {

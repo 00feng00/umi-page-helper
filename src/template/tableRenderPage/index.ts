@@ -39,7 +39,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '类型',
-      dataIndex: 'id',
+      dataIndex: 'yourVar',
       ellipsis: true,
       valueType: 'select',
       order: 6,
@@ -48,12 +48,12 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       },
       fieldProps: {
         option: [],
-        placeholder: '请选择业务类型',
+        placeholder: '请选择类型',
       },
     },
     {
       title: '状态',
-      dataIndex: 'id',
+      dataIndex: 'yourVar',
       valueType: 'select',
       order: 5,
       searchFormColumn: {
@@ -66,13 +66,13 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '商品',
-      dataIndex: 'id',
+      dataIndex: 'yourVar',
       hideInSearch: true,
       ellipsis: true,
     },
     {
       title: '数量',
-      dataIndex: 'mainName',
+      dataIndex: 'yourVar',
       hideInSearch: true,
       renderText(text, record) {
         //数量+单位
@@ -81,7 +81,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '价格',
-      dataIndex: 'mainType',
+      dataIndex: 'yourVar',
       hideInSearch: true,
       renderText(text) {
         return '123元';
@@ -89,19 +89,19 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '开始时间',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       valueType: 'dateTime',
       hideInSearch: true,
     },
     {
       title: '结束时间',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       valueType: 'dateTime',
       hideInSearch: true,
     },
     {
       title: '日期',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       valueType: 'date',
       hideInSearch: true,
     },
@@ -109,7 +109,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
       title: '地址',
       order: 3,
       ellipsis: true,
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       searchFormColumn: {
         dataIndex: 'qp-mainName-like',
       },
@@ -120,7 +120,7 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '渠道',
-      dataIndex: 'phoneNumber',
+      dataIndex: 'yourVar',
       valueType: 'select',
       order: 4,
       searchFormColumn: {
@@ -133,13 +133,13 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '备注',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       ellipsis: true,
       hideInSearch: true,
     },
     {
       title: '编码',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       order: 7,
       searchFormColumn: {
         dataIndex: 'qp-mainName-like',
@@ -151,23 +151,23 @@ const BiddingMgt = (props: PropsWithChildren<IBaseContentProps>) => {
     },
     {
       title: '名称',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       hideInSearch: true,
     },
     {
       title: '其他时间',
-      dataIndex: 'createTime',
+      dataIndex: 'yourVar',
       valueType: 'dateTime',
       hideInSearch: true,
     },
     {
       title: '创建人',
-      dataIndex: 'createUserName',
+      dataIndex: 'yourVar',
       hideInSearch: true,
     },
     {
       title: '开始时间',
-      dataIndex: 'createTime',
+      dataIndex: 'yourVar',
       valueType: 'dateTime',
       hideInSearch: true,
     },
