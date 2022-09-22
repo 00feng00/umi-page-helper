@@ -2,7 +2,7 @@
   "name": "umi-page-helper",
 	"displayName": "umi-page-helper",
 	"description": "一款快速生成react+antd各种场景的模板插件",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"repository": "https://github.com/00feng00/umi-page-helper",
 	"publisher": "afengFE",
 	"license": "MIT",
@@ -18,6 +18,7 @@
         "onCommand:umi-page-helper.generateSimplePage",
         "onCommand:umi-page-helper.generateSearchFormAndTable",
         "onCommand:umi-page-helper.generateModal",
+				"onCommand:umi-page-helper.tableRenderPage",
 				"onCommand:umi-page-helper.generateYZPage"
 	],
 	"main": "./out/extension.js",
@@ -37,6 +38,11 @@
 				"command": "umi-page-helper.generateModal",
 				"title": "生成一个弹窗页面",
 				"category": "快速生成React&Antd页面"
+			},
+			{
+				"command": "umi-page-helper.tableRenderPage",
+				"title": "生成一个tableRender页面",
+				"category": "快速生成tableRender页面"
 			},
 			{
 				"command": "umi-page-helper.generateYZPage",
@@ -66,8 +72,12 @@
 					"group": "1_generate@3"
 				},
 				{
-					"command": "umi-page-helper.generateYZPage",
+					"command": "umi-page-helper.tableRenderPage",
 					"group": "1_generate@4"
+				},
+				{
+					"command": "umi-page-helper.generateYZPage",
+					"group": "1_generate@5"
 				}
 			]
     },
