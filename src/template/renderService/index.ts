@@ -4,7 +4,7 @@ import { request } from 'umi';
 
 const api = {
   getMainList: (params: any): Promise<any> =>
-    request(`/api/inquiryOrder/hall`, {
+    request('/api/inquiryOrder/hall', {
       method: 'GET',
       params,
     }),
